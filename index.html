@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Te invito a compartir conmigo una noche inolvidable.">
+  <link rel="canonical" href="https://invitacion-noa.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://invitacion-noa.netlify.app/">
+  <meta property="og:title" content="Noa XV | 27 de noviembre de 2026">
+  <meta property="og:description" content="Te invito a compartir conmigo una noche inolvidable.">
+  <meta property="og:image" content="https://invitacion-noa.netlify.app/public/og-noa.png">
+  <meta property="og:image:width" content="1731">
+  <meta property="og:image:height" content="909">
+  <meta property="og:image:type" content="image/png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Noa XV | 27 de noviembre de 2026">
+  <meta name="twitter:description" content="Te invito a compartir conmigo una noche inolvidable.">
+  <meta name="twitter:image" content="https://invitacion-noa.netlify.app/public/og-noa.png">
+  <title>Noa XV | 27 de noviembre de 2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="intro-open">
+  <div id="invitation-entry" class="invitation-entry" role="dialog" aria-modal="true" aria-label="Elegir cómo entrar a la invitación">
+    <div class="entry-card">
+      <img src="public/entrada-musica-noa.png" alt="Noa, mis quince">
+      <button class="entry-choice entry-choice--music" data-entry="music" aria-label="Entrar con música"></button>
+      <button class="entry-choice entry-choice--silent" data-entry="silent" aria-label="Entrar sin música"></button>
+    </div>
+  </div>
+  <audio id="invitation-audio" src="public/audio/musica-noa.mp3" preload="metadata" loop></audio>
+  <button id="audio-toggle" class="audio-toggle" type="button" aria-label="Pausar música" aria-pressed="true" hidden>
+    <span class="audio-toggle-icon" aria-hidden="true"></span>
+  </button>
+  <main>
+    <section class="piece effect-hero"><img src="public/referencias/01-portada-noa.png" alt="Invitación de Noa"></section>
+    <section class="piece guest-section" aria-labelledby="guest-title">
+      <img class="guest-backdrop" src="public/referencias/01b-invitados-noa.png" alt="" aria-hidden="true">
+      <div class="guest-copy">
+        <span class="guest-kicker">INVITADOS</span>
+        <p>Esta invitación fue preparada<br>especialmente para</p>
+        <h2 id="guest-title">Vos</h2>
+        <span class="guest-divider" aria-hidden="true"></span>
+        <p class="guest-message">Nos encantaría compartir esta noche inolvidable con vos.</p>
+      </div>
+    </section>
+    <section class="piece countdown-piece">
+      <img src="public/referencias/02-cuenta-regresiva.png" alt="Cada vez falta menos">
+      <div class="countdown" aria-label="Cuenta regresiva para la fiesta">
+        <div><strong id="days">00</strong><span>DÍAS</span></div>
+        <div><strong id="hours">00</strong><span>HORAS</span></div>
+        <div><strong id="minutes">00</strong><span>MINUTOS</span></div>
+        <div><strong id="seconds">00</strong><span>SEGUNDOS</span></div>
+      </div>
+    </section>
+    <section class="piece action-piece">
+      <img src="public/referencias/03-fecha-hora-noa.png" alt="Viernes 27 de noviembre de 2026, de 21:00 a 5:30 horas">
+      <a class="hotspot calendar" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Fiesta%20de%2015%20de%20Noa&dates=20261128T000000Z/20261128T083000Z&details=Te%20espero%20para%20celebrar%20juntos&location=Jano%27s%2C%20Manuel%20Savio%20y%20Calchaqu%C3%AD%203151" target="_blank" rel="noreferrer" aria-label="Agregar la fiesta al calendario"></a>
+    </section>
+    <section class="piece action-piece">
+      <img src="public/referencias/04-como-llegar-noa.png" alt="Cómo llegar a Jano's, Manuel Savio y Calchaquí 3151">
+      <button class="hotspot map" data-dialog="location-modal" aria-label="Ver cómo llegar"></button>
+    </section>
+    <section class="piece effect-dress"><img src="public/referencias/05-dress-code-noa.png" alt="Dress code elegante: evitá azul, negro y gris"></section>
+    <section class="piece action-piece">
+      <img src="public/referencias/06-album-fotos-bloomkeep.png" alt="Álbum de fotos: compartí tus fotos de la fiesta y guardemos juntos cada recuerdo">
+      <a class="bloomkeep-button" href="https://app.bloomkeep.site/noa-15" target="_blank" rel="noreferrer" aria-label="Entrar a Bloomkeep"></a>
+    </section>
+    <section class="photo-gallery" aria-labelledby="gallery-title">
+      <header class="gallery-heading">
+        <span class="gallery-kicker">RECUERDOS</span>
+        <h2 id="gallery-title">Un poquito<br><em>de mí</em></h2>
+        <span class="gallery-star" aria-hidden="true">✦</span>
+      </header>
+      <div class="gallery-grid">
+        <button class="gallery-photo gallery-photo--wide" data-gallery-photo aria-label="Ampliar foto nocturna de Noa"><img src="public/fotos-noa/noa-01.jpeg" alt="Noa posando de noche" loading="lazy"></button>
+        <button class="gallery-photo" data-gallery-photo aria-label="Ampliar retrato nocturno de Noa"><img src="public/fotos-noa/noa-02.jpeg" alt="Noa junto al río de noche" loading="lazy"></button>
+        <button class="gallery-photo" data-gallery-photo aria-label="Ampliar foto de Noa en las escalinatas"><img src="public/fotos-noa/noa-03.jpeg" alt="Noa en las escalinatas" loading="lazy"></button>
+        <button class="gallery-photo gallery-photo--landscape" data-gallery-photo aria-label="Ampliar foto de Noa junto a las flores"><img src="public/fotos-noa/noa-04.jpeg" alt="Noa junto a las flores" loading="lazy"></button>
+        <button class="gallery-photo gallery-photo--tall" data-gallery-photo aria-label="Ampliar foto de Noa sentada en las escalinatas"><img src="public/fotos-noa/noa-05.jpeg" alt="Noa sentada en las escalinatas" loading="lazy"></button>
+        <button class="gallery-photo gallery-photo--tall" data-gallery-photo aria-label="Ampliar foto nocturna de Noa"><img src="public/fotos-noa/noa-06.jpeg" alt="Noa en una pasarela de madera" loading="lazy"></button>
+        <button class="gallery-photo gallery-photo--landscape gallery-photo--focus-upper" data-gallery-photo aria-label="Ampliar foto nocturna de Noa junto a una mesa"><img src="public/fotos-noa/noa-07.jpeg" alt="Noa junto a una mesa bajo las luces" loading="lazy"></button>
+      </div>
+    </section>
+    <section class="piece action-piece effect-gifts">
+      <img src="public/referencias/07-regalos.png" alt="Regalos: lo más lindo es compartir este momento con vos">
+      <button class="hotspot gifts" data-dialog="gift-modal" aria-label="Ver datos para regalos"></button>
+    </section>
+    <section class="piece action-piece effect-music">
+      <img src="public/referencias/08-musica.png" alt="Música: armemos juntos la playlist de mi fiesta">
+      <a class="hotspot song" href="https://open.spotify.com/playlist/64ZjTYKYNlk7DWYe7UvJPz?si=_L0lxqzVTaaqviHFTkRMkw&amp;utm_source=whatsapp&amp;pt=4dad3bd9cccd1acfe8beda715e45427d&amp;pi=wD1quk4lQea_k" target="_blank" rel="noreferrer" aria-label="Abrir la playlist de Noa en Spotify"></a>
+    </section>
+    <section class="piece action-piece effect-rsvp">
+      <img src="public/referencias/09-venis-noa.png" alt="¿Venís? Confirmá tu asistencia hasta el 12 de noviembre">
+      <a class="hotspot rsvp" href="https://bloomdate-rsvp.netlify.app/r/cumple-xv-noa" target="_blank" rel="noreferrer" aria-label="Confirmar asistencia"></a>
+    </section>
+    <section class="piece farewell">
+      <img src="public/fotos-noa/noa-08.jpeg" alt="Retrato de Noa" loading="lazy">
+      <div class="farewell-copy"><span>Te espero</span><h2>Noa</h2></div>
+    </section>
+    <footer class="bloomdate-footer effect-footer">
+      <img src="public/referencias/10-footer-bloomdate.png" alt="Hecho con amor por BloomDate">
+      <a class="footer-link footer-instagram" href="https://www.instagram.com/bloomdate.invitaciones/" target="_blank" rel="noreferrer" aria-label="Instagram de BloomDate"></a>
+      <a class="footer-link footer-whatsapp" href="https://wa.me/541140436324" target="_blank" rel="noreferrer" aria-label="WhatsApp de BloomDate"></a>
+      <a class="footer-link footer-web" href="https://bloomdate-site.netlify.app/" target="_blank" rel="noreferrer" aria-label="Sitio web de BloomDate"></a>
+    </footer>
+  </main>
+  <dialog id="location-modal">
+    <button class="close" aria-label="Cerrar">×</button><span class="modal-kicker">CÓMO LLEGAR</span>
+    <h2>Jano's</h2><p>Manuel Savio y Calchaquí N° 3151</p>
+    <a class="modal-action" href="https://www.google.com/maps/search/?api=1&query=Jano%27s+Manuel+Savio+y+Calchaqui+3151" target="_blank" rel="noreferrer">ABRIR EN GOOGLE MAPS</a>
+  </dialog>
+  <dialog id="gift-modal">
+    <button class="close" aria-label="Cerrar">×</button><span class="modal-kicker">REGALOS</span>
+    <h2>Datos para regalar</h2>
+    <dl><div><dt>Nombre</dt><dd>Noa Mía Shanti Sosa</dd></div><div><dt>Alias</dt><dd>noii.51</dd></div></dl>
+    <button class="modal-action copy-alias" data-alias="noii.51">COPIAR ALIAS</button>
+  </dialog>
+  <dialog id="message-modal"><button class="close" aria-label="Cerrar">×</button><p id="modal-message"></p></dialog>
+  <dialog id="photo-modal" class="photo-modal" aria-label="Foto ampliada">
+    <button class="close photo-modal-close" aria-label="Cerrar foto">×</button>
+    <img id="photo-modal-image" src="" alt="">
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
