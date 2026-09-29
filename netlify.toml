@@ -4,6 +4,9 @@
 
 [build.environment]
   NODE_VERSION = "22"
+  # This invitation is exported as a static bundle by build-netlify.mjs.
+  # Netlify otherwise detects the unused Next dependency and injects its runtime.
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
 
 [[headers]]
   for = "/*"
