@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Te invito a compartir conmigo una noche inolvidable.">
-  <link rel="canonical" href="https://invitacion-noa.netlify.app/">
+  <meta name="description" content="Con mucha alegría quiero invitarte a compartir conmigo una noche inolvidable: mis 15 años.">
+  <link rel="canonical" href="https://bloomdate-noa-xv.netlify.app/">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://invitacion-noa.netlify.app/">
+  <meta property="og:url" content="https://bloomdate-noa-xv.netlify.app/">
   <meta property="og:title" content="Noa XV | 27 de noviembre de 2026">
-  <meta property="og:description" content="Te invito a compartir conmigo una noche inolvidable.">
-  <meta property="og:image" content="https://invitacion-noa.netlify.app/public/og-noa.png">
-  <meta property="og:image:width" content="1731">
-  <meta property="og:image:height" content="909">
+  <meta property="og:description" content="Con mucha alegría quiero invitarte a compartir conmigo una noche inolvidable: mis 15 años.">
+  <meta property="og:image" content="https://bloomdate-noa-xv.netlify.app/public/og-noa.png">
+  <meta property="og:image:secure_url" content="https://bloomdate-noa-xv.netlify.app/public/og-noa.png">
+  <meta property="og:image:width" content="1733">
+  <meta property="og:image:height" content="907">
   <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Noa, mis XV — 27 de noviembre de 2026">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Noa XV | 27 de noviembre de 2026">
-  <meta name="twitter:description" content="Te invito a compartir conmigo una noche inolvidable.">
-  <meta name="twitter:image" content="https://invitacion-noa.netlify.app/public/og-noa.png">
+  <meta name="twitter:description" content="Con mucha alegría quiero invitarte a compartir conmigo una noche inolvidable: mis 15 años.">
+  <meta name="twitter:image" content="https://bloomdate-noa-xv.netlify.app/public/og-noa.png">
   <title>Noa XV | 27 de noviembre de 2026</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -34,13 +36,14 @@
   </button>
   <main>
     <section class="piece effect-hero"><img src="public/referencias/01-portada-noa.png" alt="Invitación de Noa"></section>
-    <section class="piece guest-section" aria-labelledby="guest-title">
+    <section class="piece guest-section" aria-label="Invitados">
       <img class="guest-backdrop" src="public/referencias/01b-invitados-noa.png" alt="" aria-hidden="true">
       <div class="guest-copy">
         <span class="guest-kicker">INVITADOS</span>
         <p>Esta invitación fue preparada<br>especialmente para</p>
-        <h2 id="guest-title">Vos</h2>
+        <h2 id="nombres-invitados"></h2>
         <span class="guest-divider" aria-hidden="true"></span>
+        <p id="cantidad-lugares" class="guest-passes"></p>
         <p class="guest-message">Nos encantaría compartir esta noche inolvidable con vos.</p>
       </div>
     </section>
@@ -92,7 +95,7 @@
     </section>
     <section class="piece action-piece effect-rsvp">
       <img src="public/referencias/09-venis-noa.png" alt="¿Venís? Confirmá tu asistencia hasta el 12 de noviembre">
-      <a class="hotspot rsvp" href="https://bloomdate-rsvp.netlify.app/r/cumple-xv-noa" target="_blank" rel="noreferrer" aria-label="Confirmar asistencia"></a>
+      <a id="boton-confirmar" class="hotspot rsvp" href="https://bloomdate-rsvp.netlify.app/r/cumple-xv-noa" target="_blank" rel="noreferrer" aria-label="Confirmar asistencia"></a>
     </section>
     <section class="piece farewell">
       <img src="public/fotos-noa/noa-08.jpeg" alt="Retrato de Noa" loading="lazy">
@@ -122,5 +125,6 @@
     <img id="photo-modal-image" src="" alt="">
   </dialog>
   <script src="script.js"></script>
+  <script src="invitation-personalization.js"></script>
 </body>
 </html>

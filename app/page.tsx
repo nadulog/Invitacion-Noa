@@ -109,13 +109,14 @@ export default function Home() {
         <img src={portada.src} alt="Invitación de Noa" />
       </section>
 
-      <section className="piece guest-section" aria-labelledby="guest-title">
+      <section className="piece guest-section" aria-label="Invitados">
         <img className="guest-backdrop" src={invitados.src} alt="" aria-hidden="true" />
         <div className="guest-copy">
           <span className="guest-kicker">INVITADOS</span>
           <p>Esta invitación fue preparada<br />especialmente para</p>
-          <h2 id="guest-title">Vos</h2>
+          <h2 id="nombres-invitados"></h2>
           <span className="guest-divider" aria-hidden="true" />
+          <p id="cantidad-lugares" className="guest-passes"></p>
           <p className="guest-message">Nos encantaría compartir esta noche inolvidable con vos.</p>
         </div>
       </section>
@@ -192,7 +193,7 @@ export default function Home() {
 
       <section className="piece action-piece effect-rsvp">
         <img src={venis.src} alt="¿Venís? Confirmá tu asistencia hasta el 12 de noviembre" />
-        <a className="hotspot rsvp" href="https://bloomdate-rsvp.netlify.app/r/cumple-xv-noa" target="_blank" rel="noreferrer" aria-label="Confirmar asistencia" />
+        <a id="boton-confirmar" className="hotspot rsvp" href="https://bloomdate-rsvp.netlify.app/r/cumple-xv-noa" target="_blank" rel="noreferrer" aria-label="Confirmar asistencia" />
       </section>
 
       <section className="piece farewell">

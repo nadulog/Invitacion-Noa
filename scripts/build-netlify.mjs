@@ -11,6 +11,11 @@ for (const file of ["index.html", "styles.css", "script.js"]) {
   await cp(resolve(root, file), resolve(output, file));
 }
 
+await cp(
+  resolve(root, "public", "invitation-personalization.js"),
+  resolve(output, "invitation-personalization.js"),
+);
+
 await cp(resolve(root, "public"), resolve(output, "public"), {
   recursive: true,
 });

@@ -33,6 +33,9 @@ main > section + section::before { content: ""; position: absolute; z-index: 4; 
 .guest-copy p { margin: 0; font: italic 400 clamp(1.15rem, 5vw, 1.65rem)/1.5 Georgia, "Times New Roman", serif; color: #e7e7e7; }
 .guest-copy h2 { margin: 22px 0 18px; color: #f7f7f7; font: italic 400 clamp(4.8rem, 23vw, 7.2rem)/.9 Georgia, "Times New Roman", serif; letter-spacing: -.06em; text-shadow: 0 0 12px #fff5, 0 5px 24px #000; }
 .guest-divider { display: block; width: 92px; height: 1px; margin: 0 auto 25px; background: linear-gradient(90deg, transparent, #fff, transparent); box-shadow: 0 0 10px #fff; }
+.guest-copy #nombres-invitados { max-width: 100%; font-size: clamp(2.35rem, 12vw, 4.7rem); overflow-wrap: anywhere; }
+.guest-copy #nombres-invitados:empty, .guest-copy .guest-passes:empty { display: none; }
+.guest-copy .guest-passes { margin-bottom: 12px; color: #fff; font-size: clamp(.95rem, 4vw, 1.2rem); }
 .guest-copy .guest-message { font-size: clamp(.95rem, 4vw, 1.25rem); }
 .hotspot { position: absolute; z-index: 5; cursor: pointer; background: transparent; border: 0; border-radius: 12px; }
 .hotspot:focus-visible { outline: 3px solid #fff; outline-offset: 4px; background: rgb(255 255 255 / 12%); }
